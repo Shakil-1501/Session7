@@ -80,10 +80,7 @@ def test_readme_exists():
     assert os.path.isfile("README.md"), "README.md file missing!"
 
 
-def test_funcation_had_cap_letter():
-    functions = inspect.getmembers(session7, inspect.isfunction )
-    for function in functions:
-        assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
+
 
 
 
