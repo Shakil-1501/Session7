@@ -60,6 +60,7 @@ def test_reduce_add_every_third():
     assert s == 22
 
 
+'''
 def check_word_exists():
     with open('list.txt') as file:
         contents=file.read()
@@ -68,6 +69,7 @@ def check_word_exists():
         k=search.split()
         l=['word found is {}'.format(z)  for z in k if z in contents ]
         assert type(l) is list
+'''
 
 
 
