@@ -1,8 +1,7 @@
-import pytest , os , inspect , re , random
+import pytest , os , inspect , re , random,session7
 from decimal import Decimal
 import math
-import cmath
-
+import random
 
 def test_add_iterables():
     a=[1,2,3,4,5,6]
@@ -37,5 +36,28 @@ def test_shift_characters():
     assert p == 'yxfn'
 
 
+def generate_random_number_plates():
+    a=["KA"+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(random.randint(1001,9998)) for i in range(15)]
+    assert a == ['KA75QX3380',
+    'KA12VG3345',
+    'KA94BO7337',
+    'KA92NM3444',
+    'KA11SG2740',
+    'KA21JV8053',
+    'KA92RQ2666',
+    'KA94SU8245',
+    'KA44UB8036',
+    'KA15GV4698',
+    'KA66DU5043',
+    'KA56BY1202',
+    'KA82KC3901',
+    'KA92US2708',
+    'KA47AC7116']
+
+
+def test_number_plate_partial():
+    f=partial(session7.numberplate,b=1011)
+    k=f('DL')
+    assert k == ['DL58RB1011', 'DL58LT1011', 'DL91SL1011', 'DL77AE1011', 'DL90FA1011', 'DL66EV1011', 'DL57PB1011', 'DL63GR1011', 'DL13YR1011', 'DL44CA1011', 'DL77HG1011', 'DL60VJ1011', 'DL58JK1011', 'DL45LZ1011', 'DL19FF1011']
 
 
