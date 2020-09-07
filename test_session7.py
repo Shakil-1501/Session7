@@ -54,3 +54,14 @@ def test_reduce_add_even_number_():
     s=reduce(lambda a,b:(a+b),session7.generate_even_number_list())
     assert s == 30
 
+
+def test_reduce_add_every_third():
+    s=reduce(lambda a,b:(a+b),session7.generate_every_thirdelement_list())
+    assert s == 22
+
+
+
+
+
+
+
