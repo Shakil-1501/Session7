@@ -21,4 +21,4 @@ def filterFibnocci(number):
 def numberplate(a,b):
     z=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     s=[a+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(b) for i in range(15)]
-    print(s)
+    return s
