@@ -2,7 +2,7 @@ import pytest , os , inspect , re , random,session7
 from decimal import Decimal
 import math
 import random
-from itertools import partial
+from functools import partial
 
 def test_add_iterables():
     a=[1,2,3,4,5,6]
