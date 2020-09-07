@@ -60,8 +60,8 @@ def test_reduce_add_every_third():
     assert s == 22
 
 
-'''
-def check_word_exists():
+
+def test_word_exist():
     with open('list.txt') as file:
         contents=file.read()
         search=" hello motherfucker how are you dickhead asshole.Terrorism is a big national issue which is using the human mind to get complete victory. Terrorism is terrifying the mind of the human being to make them weak so that they can rule the nation again. It needs to be solved on international level. We all should think about terrorism together to finish it from the root. We should make a strong policy to completely destroy its kingdom as well as removing the striking terror from the human minds. Terrorism uses violent ways to achieve the purpose and get positive result.\
@@ -69,7 +69,7 @@ def check_word_exists():
         k=search.split()
         l=['word found is {}'.format(z)  for z in k if z in contents ]
         assert type(l) is list
-'''
+
 
 
 
