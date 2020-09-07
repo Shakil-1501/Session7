@@ -41,9 +41,7 @@ def generate_every_thirdelement_list():
     return k
 
 
-def generate_biggest_character_string():
-    k=reduce(lambda a,b :a if a>b else b,[x for x in 'tsai'])
-    assert k == 't'
+
 
 
 

@@ -71,6 +71,11 @@ def test_word_exist():
         assert type(l) is list
 
 
+def test_generate_biggest_character_string():
+    k=reduce(lambda a,b :a if a>b else b,[x for x in 'tsai'])
+    assert k == 't'
+
+
 
 
 
