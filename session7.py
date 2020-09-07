@@ -22,3 +22,12 @@ def numberplate(a,b):
     z=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     s=[a+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(b) for i in range(15)]
     return s
+
+
+def generate_even_number_list():
+    k=[]
+    s=[1,2,3,4,5,6,7,8,9,10]
+    for i in s:
+        if i%2==0:
+            k.append(i)
+    return k

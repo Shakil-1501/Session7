@@ -3,6 +3,7 @@ from decimal import Decimal
 import math
 import random
 from functools import partial
+from functools import reduce
 
 def test_add_iterables():
     a=[1,2,3,4,5,6]
@@ -38,26 +39,18 @@ def test_shift_characters():
 
 
 def generate_random_number_plates():
+    z=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     a=["KA"+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(random.randint(1001,9998)) for i in range(15)]
-    assert a == ['KA75QX3380',
-    'KA12VG3345',
-    'KA94BO7337',
-    'KA92NM3444',
-    'KA11SG2740',
-    'KA21JV8053',
-    'KA92RQ2666',
-    'KA94SU8245',
-    'KA44UB8036',
-    'KA15GV4698',
-    'KA66DU5043',
-    'KA56BY1202',
-    'KA82KC3901',
-    'KA92US2708',
-    'KA47AC7116']
+    assert type(a) is list
 
 
 def test_number_plate_partial():
     f=partial(session7.numberplate,b=1011)
     k=f('DL')
     assert type(k) is list
+
+
+def test_reduce_add_even_number_():
+    s=reduce(lambda a,b:(a+b),session7.generate_even_number_list())
+    assert s == 30
 
