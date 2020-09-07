@@ -19,7 +19,7 @@
 
 &nbsp;
 ``` html 
-    poker,pokerstar
+    filterFibnocci,numberplate,generate_even_number_list,generate_every_thirdelement_list
                             
                             
                           
@@ -27,7 +27,7 @@
 ```
 &nbsp;
 - Write a test file, that tests all of the functions mentioned above + the other basic ones 
-- Test file must contain at least 25 tests
+- Test file must contain at least 1 tests for each function
 
 
 ---
@@ -48,10 +48,10 @@
 | 4 | RREADME Formatting | Pass |
 | 5 | Proper identation and  PEP8 guidelines | Pass |
 | 6 | Function name not defined with capital letters | Pass |
-| 7 | test_docstring | Pass |
-| 8 | test_annotation | Pass |
-| 9 | test_created_cards | Pass |
-| 10 | test_winner_in_three_pair_card | Pass | 
+| 7 | test_add_iterables | Pass |
+| 8 | test_strip_vowels | Pass |
+| 9 | test_Relu_function | Pass |
+| 10 | test_shift_characters | Pass | 
 
 ---
 
