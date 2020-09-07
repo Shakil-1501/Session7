@@ -38,10 +38,10 @@ def test_shift_characters():
     assert p == 'yxfn'
 
 
-def generate_random_number_plates():
+def test_random_number_plate():
     z=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-    a=["KA"+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(random.randint(1001,9998)) for i in range(15)]
-    assert type(a) is list
+    s=["KA"+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(random.randint(1001,9998)) for i in range(15)]
+    assert type(s) is list
 
 
 def test_number_plate_partial():
