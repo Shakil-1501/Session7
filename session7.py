@@ -16,7 +16,11 @@ def filterFibnocci(number):
         return True
     else:
         return False
+filteredFibnocci = filter(filterFibnocci,numbers)
 
+print('The filtered fibnocci numbers are:')
+for i in filteredFibnocci:
+    print(i)
 
 def numberplate(a,b):
     z=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
