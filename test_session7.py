@@ -18,7 +18,23 @@ def test_strip_vowels():
     assert s == 'ts'
 
 
+def test_Relu_function():
+    a=[-1,2,3,-4,5]
+    k=[i if i>0 else 0 for i in a]
+    assert k == [0, 2, 3, 0, 5]
 
+
+def test_sigmoid_function():
+    a=[-2,-3,2,3,4]
+    k=[1 if i>=1 else 0 for i in a]
+    assert k == [0, 0, 1, 1, 1]
+
+
+def test_shift_characters():
+    a="tsai"
+    k=[chr(ord(i)+5) for i in a]
+    p="".join(i for i in k)
+    assert p == 'yxfn'
 
 
 
